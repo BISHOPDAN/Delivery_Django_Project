@@ -35,7 +35,7 @@ class ShippingDocument(models.Model):
     reference_no = models.IntegerField()
     doc_url	= models.CharField(max_length=100)
     document_name = models.CharField(max_length=100)
-    shipment_id = models.CharField(max_length=100)
+    shipment = models.CharField(max_length=100)
 
 
     def __str__(self) -> str:

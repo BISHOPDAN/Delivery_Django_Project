@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework.authtoken',
-    'rest_framework_swagger',
+    #'rest_framework_swagger',
     'rest_framework',
     'delivery_app',
     'corsheaders',
@@ -100,9 +100,9 @@ WSGI_APPLICATION = 'delivery_project.wsgi.application'
 DATABASES={
    'default':{
       'ENGINE':'django.db.backends.postgresql_psycopg2',
-      'NAME':'BossDatadb',
+      'NAME':'DeliveryBoss554',
       'USER':'postgres',
-      'PASSWORD':'statistics6ix',
+      'PASSWORD':'statistics554',
       'HOST':'localhost',
      
    }
