@@ -95,6 +95,10 @@ class ShippingFromSerializer(serializers.ModelSerializer):
 
 
 class TrackingSerializer(serializers.ModelSerializer):
+    shipments = serializers.SerializerMethodField()                        #(source="shipment_key.name")
+    shippingtos = serializers.SerializerMethodField()
+    shippingfroms = serializers.SerializerMethodField()
+    
     class Meta:
         model = Tracking
         fields= ('id',

@@ -23,7 +23,7 @@ urlpatterns = [
     path('shipment/', ShipmentViews.as_view()),
     path('shippingto/', ShippingToViews.as_view()),
     path('shippingfrom/', ShippingFromViews.as_view()),
-    path('track/<int:tracking_no>', TrackingViews.as_view()),
+    path('track/<int:tracking_no>/', TrackingViews.as_view()),
     path('track/', TrackingViews.as_view()),
     path('country/', CountryViews.as_view()),
     path('states/', StateViews.as_view(), name='states'),
@@ -32,7 +32,6 @@ urlpatterns = [
     path('api/login/', LoginAPI.as_view(), name='login'),
     path('api/logout/', knox_views.LogoutView.as_view(), name='logout'),
     path('api/logoutall/', knox_views.LogoutAllView.as_view(), name='logoutall'),
-  
 ]
 
 
